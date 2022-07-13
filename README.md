@@ -10,5 +10,8 @@ Up django:
 
     python manage.py runserver
 
-teste
 
+Participantes:
+
+    - Thiago
+    - Teste
