@@ -13,3 +13,4 @@ Up django:
 Participantes:
 
     André
+    Thiago
