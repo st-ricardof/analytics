@@ -12,5 +12,7 @@ Up django:
 
 Participantes:
 
-    André
-    Thiago
+    - Thiago
+    - Teste
+    - André
+
