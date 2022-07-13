@@ -10,3 +10,5 @@ Up django:
 
     python manage.py runserver
 
+teste
+
