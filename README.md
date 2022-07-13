@@ -10,3 +10,6 @@ Up django:
 
     python manage.py runserver
 
+Participantes:
+
+    André
