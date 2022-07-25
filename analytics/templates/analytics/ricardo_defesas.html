@@ -1,0 +1,25 @@
+{% extends 'analytics/base.html' %}
+
+{%block content %}
+
+<img src='data:image/png;base64,{{nivel_plot}}'/>
+<br>
+<table>
+    <tr>
+      {% for col in df.columns %}
+        <td>
+          {{col}}
+        </td>
+      {% endfor %}
+    </tr>
+      {% for index, row in df.iterrows %}
+        <tr>
+          {% for cell in row %}
+            <td>
+              {{cell}}
+            </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+  </table>
+{% endblock %}

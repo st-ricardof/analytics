@@ -4,8 +4,12 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import urllib
 
-from .utils import programas
+from .utils import programas,ricardoDefesas
 
 def index(request):
     dados = programas.load()
     return render(request, 'analytics/index.html', {'dados': dados })
+
+def ricardo_defesas(request):
+    dados = ricardoDefesas.load()
+    return render(request, 'analytics/ricardo_defesas.html', {'df': dados['df'], 'nivel_plot': dados['nivel_plot'] })
