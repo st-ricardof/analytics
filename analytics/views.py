@@ -12,5 +12,5 @@ def index(request):
 
 def ricardo_defesas(request):
     dados = ricardoDefesas.loadNivel()
-    defesas_curso = ricardoDefesas.loadDefesasCurso()
-    return render(request, 'analytics/ricardo_defesas.html', {'df': dados['df'], 'nivel_plot': dados['nivel_plot'], 'defesas_curso' : defesas_curso })
+    defesas_programa_curso = ricardoDefesas.loadDefesasProgramaCurso()
+    return render(request, 'analytics/ricardo_defesas.html', {'df': dados['df'], 'nivel_plot': dados['nivel_plot'], 'defesasPorCurso' : defesas_programa_curso['defesasPorCurso'], 'defesasPorPrograma': defesas_programa_curso['defesasPorPrograma'] })
